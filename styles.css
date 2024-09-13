@@ -11,12 +11,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
 }
 
@@ -27,9 +27,11 @@ body {
 
 .official-mvp {
     font-size: 16px;
-    color: #333;
-    font-weight: bold;
+    color: #fff;
+    font-family: Arial, sans-serif;
     text-transform: uppercase;
+    flex-grow: 1;
+    text-align: center;
 }
 
 .nav ul {
@@ -40,7 +42,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -64,14 +66,15 @@ body {
     font-weight: bold;
     overflow: hidden;
     white-space: nowrap;
-    width: 66%;
+    width: 100%;
     margin: 10px auto;
+    height: 30px;
     border: 1px solid #000;
 }
 
 #banner-text {
     display: inline-block;
-    animation: scroll-left 45s linear infinite;
+    animation: scroll-left 60s linear infinite;
     text-transform: uppercase;
     letter-spacing: 10px;
 }
@@ -134,6 +137,12 @@ body {
     font-family: 'Adobe Arabic', serif;
 }
 
+/* NFT Counter */
+.nft-counter {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
 /* Buttons and Inputs */
 input, .wallet-button, .mint-button {
     width: 80%;
@@ -155,6 +164,40 @@ input, .wallet-button, .mint-button {
     background-color: #0056b3;
 }
 
+/* Rating Banner Styles */
+.rating-banner {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.stars {
+    font-size: 24px;
+    color: #ffd700;
+    cursor: pointer;
+}
+
+/* Early Adopters Banner */
+.early-adopters-banner {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+
+.early-adopters-banner input {
+    margin-top: 10px;
+    padding: 5px;
+    width: 80%;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+}
+
 /* Footer Styles */
 .footer {
     background-color: #f8f8f8;
@@ -170,11 +213,18 @@ input, .wallet-button, .mint-button {
     flex-wrap: wrap;
 }
 
-.social-media img {
-    height: 30px;
-    margin: 0 10px;
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    text-align: center;
 }
 
-.contact-info {
-    margin: 10px 0;
+.brand-footer {
+    font-family: 'Gruppo', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.footer-right {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
 }

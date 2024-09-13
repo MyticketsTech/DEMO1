@@ -12,9 +12,9 @@
     <!-- Header Section -->
     <header class="header">
         <div class="logo">
-            <img src="https://gateway.pinata.cloud/ipfs/QmZF6agMEJTGUc1mCbSojfjmcstvjQQb1K3QrXt5yAyWv4" alt="MyTickets.Tech Logo" class="logo-image">
+            <img src="https://gateway.pinata.cloud/ipfs/QmXTkoA6V1vRyanN1W9dvhHXJdAC7Vxyi7nciP34ouGoaR" alt="MyTickets.Tech Logo" class="logo-image">
         </div>
-        <div class="official-mvp">THE OFFICIAL MVP</div>
+        <div class="official-mvp">WELCOME TO THE OFFICIAL MVP</div>
         <nav class="nav">
             <ul>
                 <li><a href="#"><img src="URL_ICONO_CASA" alt="Inicio" class="nav-icon"></a></li>
@@ -43,20 +43,45 @@
             <p class="nft-description">¡RESONANDO ENTRE MUELAS!</p>
         </div>
         <div class="column action-column">
+            <div class="nft-counter">
+                <p>NFTs disponibles: <span id="nft-available">100</span></p>
+                <p>NFTs minteados: <span id="nft-minted">0</span></p>
+            </div>
             <button class="wallet-button" onclick="connectWallet()">Conectar Billetera</button>
             <input type="password" id="password" placeholder="Ingrese una contraseña única">
             <button class="mint-button" onclick="mintNFT()">Mintear NFT</button>
         </div>
     </div>
 
+    <!-- Banner de Valoración Post-Minteo -->
+    <div class="rating-banner">
+        <p>AYÚDANOS CON TU VALORACIÓN. ¿QUÉ TE PARECE ESTE COMPLEMENTO NO-FUNGIBLE?</p>
+        <div class="stars">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>¿Fue fácil de mintear?</p>
+        <p>¿Te gustó el diseño del NFT?</p>
+        <p>¿Recomendarías esta experiencia a otros?</p>
+        <p>¿Cómo mejorarías esta plataforma?</p>
+    </div>
+
+    <!-- Invitación a los Early Adopters -->
+    <div class="early-adopters-banner">
+        <p>Únete a los Early Adopters de MyTickets.Tech</p>
+        <input type="email" placeholder="Deja tu correo electrónico">
+    </div>
+
     <!-- Footer Informativo -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/francescmorata" target="_blank"><img src="URL_ICONO_LINKEDIN" alt="LinkedIn"></a>
+            <div class="footer-left">
+                <p>myticketstech@proton.me</p>
             </div>
-            <div class="contact-info">
-                <p>Contacto: <a href="mailto:myticketstech@proton.me">myticketstech@proton.me</a></p>
+            <div class="footer-center">
+                <p class="brand-footer">MYTICKETS.TECH</p>
+            </div>
+            <div class="footer-right">
+                <p>TODOS LOS DERECHOS RESERVADOS 2024</p>
             </div>
         </div>
     </footer>
