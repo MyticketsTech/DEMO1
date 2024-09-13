@@ -9,19 +9,20 @@
 </head>
 <body>
     <div class="banner">
-        <p>GRACIAS POR CONFIAR EN MYTICKETS.TECH. THANK YOU FOR TRUSTING MYTICKETS.TECH. MERCI DE FAIRE CONFIANCE À MYTICKETS.TECH. OBRIGADO POR CONFIAR NA MYTICKETS.TECH.</p>
+        <p id="banner-text">GRACIAS POR CONFIAR EN MYTICKETS.TECH. THANK YOU FOR TRUSTING MYTICKETS.TECH. MERCI DE FAIRE CONFIANCE À MYTICKETS.TECH. OBRIGADO POR CONFIAR NA MYTICKETS.TECH.</p>
     </div>
     <h1 class="brand">MYTICKETS.TECH</h1>
-    <button class="wallet-button" onclick="connectWallet()">Conectar Billetera</button>
 
     <div class="container">
         <div class="nft-info">
             <img src="https://gateway.pinata.cloud/ipfs/QmSckQxQr3CeauARPHirukjsKAktFmRtFVxXfUj4yc9RQF" alt="NFT Preview" class="nft-image">
             <div class="nft-details">
                 <h2>II Quedada Valdeande Mágico</h2>
-                <p>NFT conmemorativo de la "Segunda Quedada Bere de Valdeande Mágico".<br>¡RESONANDO ENTRE MUELAS!</p>
+                <p>NFT conmemorativo de la "Segunda Quedada Bere de Valdeande Mágico".</p>
+                <p>¡RESONANDO ENTRE MUELAS!</p>
             </div>
         </div>
+        <button class="wallet-button" onclick="connectWallet()">Conectar Billetera</button>
         <input type="password" id="password" placeholder="Ingrese una contraseña única">
         <button class="mint-button" onclick="mintNFT()">Mintear NFT</button>
         <div id="message"></div>
