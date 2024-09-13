@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #e6f0ff;
     color: #333;
-    margin-top: 70px; /* Adjusted for fixed header */
+    margin-top: 50px; /* Adjusted for fixed header */
 }
 
 /* Header Styles */
@@ -15,14 +15,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
 
 .logo .logo-image {
-    height: 40px;
+    height: 30px;
     width: auto;
+}
+
+.official-mvp {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .nav ul {
@@ -42,6 +49,11 @@ body {
     color: #007bff;
 }
 
+.nav-icon {
+    width: 20px;
+    height: 20px;
+}
+
 /* Banner Styles */
 .banner {
     background-color: #007bff;
@@ -52,13 +64,14 @@ body {
     font-weight: bold;
     overflow: hidden;
     white-space: nowrap;
-    width: 100%;
-    margin-bottom: 10px;
+    width: 66%;
+    margin: 10px auto;
+    border: 1px solid #000;
 }
 
 #banner-text {
     display: inline-block;
-    animation: scroll-left 30s linear infinite;
+    animation: scroll-left 45s linear infinite;
     text-transform: uppercase;
     letter-spacing: 10px;
 }
@@ -107,6 +120,7 @@ body {
 
 .title-column {
     text-align: left;
+    padding-left: 15px; /* Ajuste del margen izquierdo */
 }
 
 .nft-title {
@@ -161,15 +175,6 @@ input, .wallet-button, .mint-button {
     margin: 0 10px;
 }
 
-.contact-info, .legal-info {
+.contact-info {
     margin: 10px 0;
-}
-
-.legal-info a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-.legal-info a:hover {
-    text-decoration: underline;
 }
