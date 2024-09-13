@@ -9,23 +9,22 @@
 </head>
 <body>
     <div class="banner">
-        <p>Gracias por confiar en mytickets.tech. Thank you for trusting mytickets.tech. Merci de faire confiance à mytickets.tech. Obrigado por confiar na mytickets.tech.</p>
-        <div class="brand">MYTICKETS.TECH</div>
+        <p>GRACIAS POR CONFIAR EN MYTICKETS.TECH. THANK YOU FOR TRUSTING MYTICKETS.TECH. MERCI DE FAIRE CONFIANCE À MYTICKETS.TECH. OBRIGADO POR CONFIAR NA MYTICKETS.TECH.</p>
     </div>
+    <h1 class="brand">MYTICKETS.TECH</h1>
+    <button class="wallet-button" onclick="connectWallet()">Conectar Billetera</button>
+
     <div class="container">
-        <h1>II Quedada Valdeande Mágico</h1>
-        <button id="connectWallet" onclick="connect()">Conectar Billetera</button>
-        <div class="content">
+        <div class="nft-info">
             <img src="https://gateway.pinata.cloud/ipfs/QmSckQxQr3CeauARPHirukjsKAktFmRtFVxXfUj4yc9RQF" alt="NFT Preview" class="nft-image">
-            <div class="description">
+            <div class="nft-details">
                 <h2>II Quedada Valdeande Mágico</h2>
-                <p>NFT conmemorativo de la "Segunda Quedada Bere de Valdeande Mágico". ¡RESONANDO ENTRE MUELAS!</p>
+                <p>NFT conmemorativo de la "Segunda Quedada Bere de Valdeande Mágico".<br>¡RESONANDO ENTRE MUELAS!</p>
             </div>
         </div>
-        <form id="mintForm">
-            <input type="password" id="password" placeholder="Ingrese una contraseña única">
-            <button type="button" onclick="mintNFT()">Mintear NFT</button>
-        </form>
+        <input type="password" id="password" placeholder="Ingrese una contraseña única">
+        <button class="mint-button" onclick="mintNFT()">Mintear NFT</button>
+        <div id="message"></div>
     </div>
 
     <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
