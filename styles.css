@@ -1,9 +1,48 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #e6f0ff;
     color: #333;
+    margin-top: 70px; /* Adjusted for fixed header */
 }
 
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo .logo-image {
+    height: 40px;
+    width: auto;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #007bff;
+}
+
+/* Banner Styles */
 .banner {
     background-color: #007bff;
     color: white;
@@ -19,7 +58,7 @@ body {
 
 #banner-text {
     display: inline-block;
-    animation: scroll-left 25s linear infinite;
+    animation: scroll-left 30s linear infinite;
     text-transform: uppercase;
     letter-spacing: 10px;
 }
@@ -33,6 +72,7 @@ body {
     }
 }
 
+/* Brand Styles */
 .brand {
     text-align: center;
     font-size: 45px;
@@ -42,8 +82,9 @@ body {
     text-transform: lowercase;
 }
 
+/* Main Container */
 .container {
-    width: 600px;
+    width: 800px;
     margin: 20px auto;
     padding: 20px;
     background: #fff;
@@ -60,7 +101,7 @@ body {
 }
 
 .gif-column img {
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
@@ -79,17 +120,12 @@ body {
     font-family: 'Adobe Arabic', serif;
 }
 
-.action-column {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
+/* Buttons and Inputs */
 input, .wallet-button, .mint-button {
     width: 80%;
     padding: 5px;
     font-size: 14px;
-    margin: 0 auto;
+    margin: 10px auto;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
@@ -105,14 +141,35 @@ input, .wallet-button, .mint-button {
     background-color: #0056b3;
 }
 
-.footer-text {
+/* Footer Styles */
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
     text-align: center;
-    font-size: 24px;
-    font-family: 'Adobe Arabic', serif;
-    margin-top: 20px;
+    border-top: 1px solid #ddd;
 }
 
-.brand-footer {
-    font-family: 'Gruppo', sans-serif;
-    font-size: 24px;
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-media img {
+    height: 30px;
+    margin: 0 10px;
+}
+
+.contact-info, .legal-info {
+    margin: 10px 0;
+}
+
+.legal-info a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.legal-info a:hover {
+    text-decoration: underline;
 }
