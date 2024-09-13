@@ -1,15 +1,16 @@
+/* General Styles */
 body {
+    font-family: 'Gruppo', sans-serif;
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Eliminar desplazamiento horizontal */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
-header {
+/* Header Styles */
+.header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background: black;
+    justify-content: space-between;
+    background-color: black;
     padding: 10px 20px;
     position: fixed;
     width: 100%;
@@ -17,119 +18,111 @@ header {
     z-index: 1000;
 }
 
-.logo {
-    height: 50px;
+.header-logo {
+    height: 40px;
+    max-height: 40px;
 }
 
 .header-title {
     color: white;
-    font-size: 20px;
+    font-family: Arial, sans-serif;
     text-align: center;
-    flex: 1;
+    flex-grow: 1;
 }
 
 .telegram-button {
+    margin-left: auto;
     background-color: white;
     color: black;
-    padding: 5px 15px;
-    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
     border-radius: 5px;
-    font-size: 14px;
 }
 
+/* Banner Styles */
 .banner {
-    background-color: #007bff;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 60px;
+    padding: 5px 0;
+    background-color: #007bff;
+    text-align: center;
+    overflow: hidden;
     position: relative;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
-.banner-text {
-    font-size: 14px;
-    color: white;
-    text-transform: uppercase;
-    animation: banner-move 20s linear infinite;
+.banner p {
+    margin: 0;
     white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    display: inline-block;
 }
 
-@keyframes banner-move {
+@keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
 }
 
-main {
-    padding: 100px 20px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Minting Container Styles */
+.minting-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 80px 20px 20px;
 }
 
-.minting-container {
+.nft-preview {
     display: flex;
-    background-color: white;
-    padding: 20px;
-    width: 80%;
-    max-width: 1200px;
-    border-radius: 8px;
-    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .nft-preview img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
 .nft-details {
-    flex: 1;
-    margin: 0 20px;
+    font-family: 'Adobe Arabic', sans-serif;
     text-align: left;
-}
-
-.mint-controls {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-}
-
-.mint-controls .wallet-button, .mint-controls .mint-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
     padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
 }
 
-.password-input {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
+.minting-actions {
     text-align: center;
 }
 
-footer {
+.minting-actions p {
+    font-weight: bold;
+}
+
+.wallet-button, .mint-button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.minting-actions input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Footer Styles */
+.footer {
     display: flex;
     justify-content: space-between;
+    background-color: #f8f8f8;
     padding: 10px 20px;
-    background-color: #f1f1f1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     font-size: 14px;
-}
-
-footer .center-text {
-    text-align: center;
-    flex: 1;
-    font-family: 'Gruppo', sans-serif;
-}
-
-footer .right-text {
-    text-align: right;
+    color: #333;
 }

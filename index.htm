@@ -1,51 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyTickets.Tech - NFT Minting</title>
+    <title>MyTickets.Tech MVP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Adobe+Arabic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="https://gateway.pinata.cloud/ipfs/QmXTkoA6V1vRyanN1W9dvhHXJdAC7Vxyi7nciP34ouGoaR" alt="Logo MyTickets.Tech" class="logo">
-        <div class="header-title">WELCOME TO THE OFFICIAL MVP</div>
-        <a href="https://t.me/+lnTNY5kuDbkzNjE0" class="telegram-button">ÚNETE A NUESTRO TELEGRAM</a>
+    <header class="header">
+        <img src="https://gateway.pinata.cloud/ipfs/QmXTkoA6V1vRyanN1W9dvhHXJdAC7Vxyi7nciP34ouGoaR" class="header-logo" alt="MyTickets.Tech Logo">
+        <span class="header-title">WELCOME TO THE OFFICIAL MVP</span>
+        <button class="telegram-button" onclick="window.open('https://t.me/+lnTNY5kuDbkzNjE0', '_blank')">ÚNETE A NUESTRO TELEGRAM</button>
     </header>
-    
+
     <div class="banner">
-        <div class="banner-text">
-            GRACIAS POR CONFIAR EN MYTICKETS.TECH • THANK YOU FOR TRUSTING MYTICKETS.TECH • MERCI DE FAIRE CONFIANCE À MYTICKETS.TECH • OBRIGADO POR CONFIAR NA MYTICKETS.TECH
-        </div>
+        <p>GRACIAS POR CONFIAR EN MYTICKETS.TECH · THANK YOU FOR TRUSTING MYTICKETS.TECH · MERCI DE FAIRE CONFIANCE À MYTICKETS.TECH · OBRIGADO POR CONFIAR NA MYTICKETS.TECH</p>
     </div>
 
-    <main>
-        <div class="minting-container">
-            <div class="nft-preview">
-                <!-- Placeholder for NFT Image -->
-                <img src="NFT_IMAGE_URL" alt="NFT Preview">
-            </div>
-            <div class="nft-details">
-                <h2>II QUEDADA BERE</h2>
-                <p>NFT conmemorativo de la "Segunda Quedada Bere de Valdeande Mágico".</p>
-                <p>¡RESONANDO ENTRE MUELAS!</p>
-            </div>
-            <div class="mint-controls">
-                <p class="nft-count">TOTAL MINTEADOS: 0 / 100</p>
-                <button class="wallet-button">Conectar Billetera</button>
-                <input type="password" placeholder="Ingrese una contraseña única" class="password-input">
-                <button class="mint-button">Mintear NFT</button>
-            </div>
+    <main class="minting-container">
+        <div class="nft-preview">
+            <img src="https://gateway.pinata.cloud/ipfs/QmSckQxQr3CeauARPHirukjsKAktFmRtFVxXfUj4yc9RQF" alt="NFT Preview">
+        </div>
+        <div class="nft-details">
+            <h2>II QUEDADA BERE</h2>
+            <p>NFT conmemorativo de la "Segunda Quedada Bere de Valdeande Mágico".</p>
+            <p>¡RESONANDO ENTRE MUELAS!</p>
+        </div>
+        <div class="minting-actions">
+            <p>TOTAL MINTEADOS: 0 / 100</p>
+            <button class="wallet-button">Conectar Billetera</button>
+            <input type="password" placeholder="Ingrese una contraseña única">
+            <button class="mint-button">Mintear NFT</button>
         </div>
     </main>
 
-    <footer>
-        <p>myticketstech@proton.me</p>
-        <p class="center-text">MYTICKETS.TECH</p>
-        <p class="right-text">TODOS LOS DERECHOS RESERVADOS 2024</p>
+    <footer class="footer">
+        <span>myticketstech@proton.me</span>
+        <span>MYTICKETS.TECH</span>
+        <span>TODOS LOS DERECHOS RESERVADOS 2024</span>
     </footer>
-
-    <script src="app.js"></script>
 </body>
 </html>
