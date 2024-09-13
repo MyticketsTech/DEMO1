@@ -4,6 +4,10 @@ body {
     background-color: #e6f0ff;
     color: #333;
     margin-top: 50px; /* Adjusted for fixed header */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 /* Header Styles */
@@ -13,9 +17,9 @@ body {
     width: 100%;
     background-color: #000;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 5px 20px;
+    padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
 }
@@ -26,38 +30,27 @@ body {
 }
 
 .official-mvp {
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     font-family: Arial, sans-serif;
     text-transform: uppercase;
-    flex-grow: 1;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
-.nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin-left: auto; /* Adjust buttons alignment */
+.telegram-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto;
 }
 
-.nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.nav a:hover {
-    color: #007bff;
-}
-
-.nav-icon {
-    width: 20px;
-    height: 20px;
-    display: block; /* Ensures visibility */
+.telegram-button:hover {
+    background-color: #0056b3;
 }
 
 /* Banner Styles */
@@ -71,10 +64,9 @@ body {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-    margin: 10px auto;
+    margin: 60px auto; /* Adjusted for alignment */
     height: 30px;
     border: 1px solid #000;
-    position: relative;
 }
 
 #banner-text {
@@ -82,7 +74,7 @@ body {
     animation: scroll-left 60s linear infinite;
     text-transform: uppercase;
     letter-spacing: 10px;
-    white-space: nowrap;
+    vertical-align: middle; /* Center text vertically */
 }
 
 @keyframes scroll-left {
@@ -113,9 +105,9 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
 }
 
 .column {
@@ -129,7 +121,7 @@ body {
 }
 
 .title-column {
-    text-align: left;
+    text-align: center;
     padding-left: 15px; /* Align center */
     padding-right: 15px;
 }
@@ -155,7 +147,7 @@ body {
 /* Buttons and Inputs */
 input, .wallet-button, .mint-button {
     width: 80%;
-    padding: 5px;
+    padding: 10px;
     font-size: 14px;
     margin: 10px auto;
     border: 1px solid #ddd;
@@ -197,34 +189,14 @@ input, .wallet-button, .mint-button {
     background-color: #0056b3;
 }
 
-/* Early Adopters Banner */
-.early-adopters-banner {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #000;
-    color: white;
-    text-align: center;
-}
-
-.early-adopters-banner button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.early-adopters-banner button:hover {
-    background-color: #0056b3;
-}
-
 /* Footer Styles */
 .footer {
     background-color: #f8f8f8;
     padding: 20px;
     text-align: center;
     border-top: 1px solid #ddd;
+    position: relative;
+    width: 100%;
 }
 
 .footer-content {
@@ -249,4 +221,3 @@ input, .wallet-button, .mint-button {
     font-family: Arial, sans-serif;
     font-size: 14px;
 }
-
