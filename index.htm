@@ -4,36 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>II Quedada Valdeande Mágico</title>
+    <title>MyTickets Tech - Mint Your NFT</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="banner">
-        <marquee behavior="scroll" direction="left">Gracias por confiar en mytickets.tech. Thank you for trusting mytickets.tech. Merci de faire confiance à mytickets.tech. Obrigado por confiar na mytickets.tech.</marquee>
+        <p>Gracias por confiar en mytickets.tech. Thank you for trusting mytickets.tech. Merci de faire confiance à mytickets.tech. Obrigado por confiar na mytickets.tech.</p>
+        <div class="brand">MYTICKETS.TECH</div>
     </div>
     <div class="container">
         <h1>II Quedada Valdeande Mágico</h1>
-        <p>NFT conmemorativo de la "Segunda Quedada Bere de Valdeande Mágico". <br> ¡RESONANDO ENTRE MUELAS!</p>
-        <div class="nft-container">
-            <img src="https://gateway.pinata.cloud/ipfs/QmYBfzdvyAsowbVrGRBUdrYtNAd2gEgU55p5dz3NS7xmMY" alt="NFT Image">
-            <div class="nft-details">
-                <h2>Título de la Colección: II Quedada Valdeande Mágico</h2>
-                <p>Descripción: NFT conmemorativo de la Segunda Quedada Bere de Valdeande Mágico. ¡RESONANDO ENTRE MUELAS!</p>
+        <button id="connectWallet" onclick="connect()">Conectar Billetera</button>
+        <div class="content">
+            <img src="https://gateway.pinata.cloud/ipfs/QmSckQxQr3CeauARPHirukjsKAktFmRtFVxXfUj4yc9RQF" alt="NFT Preview" class="nft-image">
+            <div class="description">
+                <h2>II Quedada Valdeande Mágico</h2>
+                <p>NFT conmemorativo de la "Segunda Quedada Bere de Valdeande Mágico". ¡RESONANDO ENTRE MUELAS!</p>
             </div>
         </div>
         <form id="mintForm">
-            <label for="toAddress">Dirección del Receptor:</label>
-            <input type="text" id="toAddress" placeholder="0x...">
-
-            <label for="tokenId">ID del NFT:</label>
-            <input type="number" id="tokenId" placeholder="Ej: 1">
-
-            <label for="password">Contraseña Única:</label>
             <input type="password" id="password" placeholder="Ingrese una contraseña única">
-
             <button type="button" onclick="mintNFT()">Mintear NFT</button>
         </form>
-        <div id="message"></div>
     </div>
 
     <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
