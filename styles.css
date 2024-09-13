@@ -1,223 +1,135 @@
-/* Global Styles */
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #e6f0ff;
-    color: #333;
-    margin-top: 50px; /* Adjusted for fixed header */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
+    overflow-x: hidden; /* Eliminar desplazamiento horizontal */
 }
 
-/* Header Styles */
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #000;
+header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background: black;
     padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
     z-index: 1000;
 }
 
-.logo .logo-image {
-    height: 30px;
-    width: auto;
+.logo {
+    height: 50px;
 }
 
-.official-mvp {
-    font-size: 18px;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    text-transform: uppercase;
-    margin-left: auto;
-    margin-right: auto;
+.header-title {
+    color: white;
+    font-size: 20px;
     text-align: center;
+    flex: 1;
 }
 
 .telegram-button {
-    background-color: #007bff;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: auto;
+    background-color: white;
+    color: black;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-.telegram-button:hover {
-    background-color: #0056b3;
-}
-
-/* Banner Styles */
 .banner {
     background-color: #007bff;
-    color: white;
-    padding: 5px 0;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    margin: 60px auto; /* Adjusted for alignment */
-    height: 30px;
-    border: 1px solid #000;
-}
-
-#banner-text {
-    display: inline-block;
-    animation: scroll-left 60s linear infinite;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    vertical-align: middle; /* Center text vertically */
-}
-
-@keyframes scroll-left {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-/* Brand Styles */
-.brand {
-    text-align: center;
-    font-size: 45px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-family: 'Gruppo', sans-serif;
-    text-transform: lowercase;
-}
-
-/* Main Container */
-.container {
-    width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 25px;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    position: relative;
 }
 
-.column {
-    width: 33%;
-    text-align: center;
+.banner-text {
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    animation: banner-move 20s linear infinite;
+    white-space: nowrap;
 }
 
-.gif-column img {
+@keyframes banner-move {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+main {
+    padding: 100px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.minting-container {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.nft-preview img {
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
-.title-column {
-    text-align: center;
-    padding-left: 15px; /* Align center */
-    padding-right: 15px;
+.nft-details {
+    flex: 1;
+    margin: 0 20px;
+    text-align: left;
 }
 
-.nft-title {
-    font-size: 24px;
-    font-family: 'Adobe Arabic', serif;
-    margin-bottom: 5px;
+.mint-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
 }
 
-.nft-description {
-    font-size: 18px;
-    font-family: 'Adobe Arabic', serif;
-}
-
-/* NFT Counter */
-.nft-counter {
-    font-size: 16px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* Buttons and Inputs */
-input, .wallet-button, .mint-button {
-    width: 80%;
-    padding: 10px;
-    font-size: 14px;
-    margin: 10px auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    display: block; /* Ensure uniform sizing */
-}
-
-.wallet-button, .mint-button {
+.mint-controls .wallet-button, .mint-controls .mint-button {
     background-color: #007bff;
     color: white;
     border: none;
-    cursor: pointer;
-}
-
-.wallet-button:hover, .mint-button:hover {
-    background-color: #0056b3;
-}
-
-/* Rating Banner Styles */
-.rating-banner {
-    margin-top: 20px;
     padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
+    margin: 10px 0;
     border-radius: 5px;
-    text-align: center;
-}
-
-.rating-banner button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
     cursor: pointer;
-}
-
-.rating-banner button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer Styles */
-.footer {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #ddd;
-    position: relative;
     width: 100%;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-left, .footer-center, .footer-right {
-    flex: 1;
+.password-input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
     text-align: center;
 }
 
-.brand-footer {
-    font-family: 'Gruppo', sans-serif;
-    text-transform: uppercase;
-    font-size: 18px;
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    font-size: 14px;
 }
 
-.footer-right {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
+footer .center-text {
+    text-align: center;
+    flex: 1;
+    font-family: 'Gruppo', sans-serif;
+}
+
+footer .right-text {
+    text-align: right;
 }
