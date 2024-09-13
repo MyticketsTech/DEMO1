@@ -1,41 +1,80 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #e6f2ff; /* Azul pastel clarito */
+    color: #333;
 }
 
-h1 {
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.carousel {
+    background-color: #007bff; /* Azul intenso */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+#carouselText {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translate(100%, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.nft-image img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.mint-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-section {
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    border-radius: 5px;
-}
-
-input {
-    display: block;
-    margin: 10px 0;
-    padding: 8px;
-    width: 100%;
-    max-width: 300px;
-}
-
 button {
-    padding: 10px 15px;
-    color: #fff;
-    background-color: #007bff;
+    width: 200px;
+    padding: 10px;
+    background-color: #007bff; /* Azul intenso */
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    margin-top: 15px;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
+#message {
+    margin-top: 15px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.success {
+    color: lime;
+    animation: firework 1s ease-in-out;
+}
+
+@keyframes firework {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
