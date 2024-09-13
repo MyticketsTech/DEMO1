@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTickets.Tech NFT Minting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Mint and Verify MyTickets.Tech NFTs</h1>
+    <button id="connectButton">Connect Wallet</button>
+
+    <section id="mintSection">
+        <h2>Mint NFT</h2>
+        <input type="text" id="recipientAddress" placeholder="Recipient Address">
+        <input type="number" id="tokenId" placeholder="Token ID">
+        <input type="text" id="tokenCode" placeholder="Unique Token Code">
+        <button id="mintButton">Mint NFT</button>
+    </section>
+
+    <section id="verifySection">
+        <h2>Verify NFT Code</h2>
+        <input type="number" id="verifyTokenId" placeholder="Token ID">
+        <input type="text" id="verifyTokenCode" placeholder="Token Code">
+        <button id="verifyButton">Verify Code</button>
+    </section>
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
