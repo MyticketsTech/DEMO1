@@ -43,10 +43,7 @@
             <p class="nft-description">¡RESONANDO ENTRE MUELAS!</p>
         </div>
         <div class="column action-column">
-            <div class="nft-counter">
-                <p>NFTs disponibles: <span id="nft-available">100</span></p>
-                <p>NFTs minteados: <span id="nft-minted">0</span></p>
-            </div>
+            <p id="nft-count">TOTAL MINTEADOS: <span id="minted-count">0</span> / <span id="total-nfts">100</span></p>
             <button class="wallet-button" onclick="connectWallet()">Conectar Billetera</button>
             <input type="password" id="password" placeholder="Ingrese una contraseña única">
             <button class="mint-button" onclick="mintNFT()">Mintear NFT</button>
@@ -55,20 +52,13 @@
 
     <!-- Banner de Valoración Post-Minteo -->
     <div class="rating-banner">
-        <p>AYÚDANOS CON TU VALORACIÓN. ¿QUÉ TE PARECE ESTE COMPLEMENTO NO-FUNGIBLE?</p>
-        <div class="stars">
-            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-        </div>
-        <p>¿Fue fácil de mintear?</p>
-        <p>¿Te gustó el diseño del NFT?</p>
-        <p>¿Recomendarías esta experiencia a otros?</p>
-        <p>¿Cómo mejorarías esta plataforma?</p>
+        <p><strong>AYÚDANOS CON TU VALORACIÓN</strong></p>
+        <button onclick="window.open('https://forms.gle/gZsVSUnb6CH51HLG9')">Cuestionario</button>
     </div>
 
     <!-- Invitación a los Early Adopters -->
     <div class="early-adopters-banner">
-        <p>Únete a los Early Adopters de MyTickets.Tech</p>
-        <input type="email" placeholder="Deja tu correo electrónico">
+        <button onclick="window.open('https://t.me/+lnTNY5kuDbkzNjE0')">ÚNETE A NUESTRO TELEGRAM</button>
     </div>
 
     <!-- Footer Informativo -->
